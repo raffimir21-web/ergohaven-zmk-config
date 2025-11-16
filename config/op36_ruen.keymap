@@ -66,11 +66,6 @@
             layers = <0>;
         };
 
-        togle_len {
-            bindings = <&to_en>;
-            key-positions = <1 2 3>;
-        };
-
         to_mac {
             bindings = <&mac_layer_en>;
             key-positions = <34 35>;
@@ -144,6 +139,76 @@
         comma_ru {
             bindings = <&kp LS(SLASH)>;
             key-positions = <26 27>;
+            layers = <1 3 5 7>;
+        };
+
+        to_layer_en {
+            bindings = <&to 0>;
+            key-positions = <1 2 3>;
+            layers = <1>;
+        };
+
+        to_layer_mac_en {
+            bindings = <&to 4>;
+            key-positions = <1 2 3>;
+            layers = <5>;
+        };
+
+        brace_left_en {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <17 26>;
+            layers = <0 2 6 4>;
+        };
+
+        brace_right_en {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <27 16>;
+            layers = <0 2 4 6>;
+        };
+
+        brace_left_ru {
+            bindings = <&en LEFT_BRACE>;
+            key-positions = <17 26>;
+            layers = <1 3 5 7>;
+        };
+
+        brace_right_ru {
+            bindings = <&en RIGHT_BRACE>;
+            key-positions = <16 27>;
+            layers = <1 3 5 7>;
+        };
+
+        br_left {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <7 16>;
+        };
+
+        br_right {
+            bindings = <&kp LS(NUMBER_0)>;
+            key-positions = <6 17>;
+        };
+
+        bracket_sq_left_en {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <26 7>;
+            layers = <0 2 6 4>;
+        };
+
+        bracket_sq_right_en {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <6 27>;
+            layers = <0 2 6 4>;
+        };
+
+        bracket_sq_left_ru {
+            bindings = <&en LEFT_BRACKET>;
+            key-positions = <26 7>;
+            layers = <1 3 5 7>;
+        };
+
+        bracket_sq_right_ru {
+            bindings = <&en RIGHT_BRACKET>;
+            key-positions = <6 27>;
             layers = <1 3 5 7>;
         };
     };
