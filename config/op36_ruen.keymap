@@ -409,10 +409,10 @@
 
         sym_en {
             bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                            &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &mt NUMBER_2 A
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                             &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                             &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &kp DEL          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                            &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_2 PLUS
+  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                             &kp PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
+  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                             &kp N0       &kp N1   &kp N2  &kp N3  &kp DOT
+                                                    &kp DEL          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE    &kp ESC
             >;
 
             display-name = "Symbols";
@@ -420,10 +420,10 @@
 
         sym_ru {
             bindings = <
-  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                            &en CARET  &en LBKT  &kp UNDER           &en RBKT    &mt NUMBER_3 A
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                             &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
-  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                             &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
-                                                            &kp DEL          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                            &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_3 PLUS
+  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                             &kp RU_PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
+  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                             &kp N0          &kp N1   &kp N2  &kp N3  &en RU_DOT
+                                                            &kp DEL          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE       &kp ESC
             >;
 
             display-name = "Symbolsru";
@@ -449,19 +449,19 @@
 
         mac_sym_en {
             bindings = <
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &mt NUMBER_6 A
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-                       &kp DEL  &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &none  &none  &none  &none    &none                                &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_6 A
+  &none  &none  &none  &none    &none                                &kp PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
+  &none  &none  &none  &none    &none                                &kp N0       &kp N1   &kp N2  &kp N3  &kp DOT
+                       &kp DEL  &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE    &kp ESC
             >;
         };
 
         mac_sym_ru {
             bindings = <
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &mt NUMBER_7 A
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-                       &kp DEL  &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &none  &none  &none  &none    &none                                &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_7 A
+  &none  &none  &none  &none    &none                                &kp RU_PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
+  &none  &none  &none  &none    &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp LS(NUMBER_7)
+                       &kp DEL  &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE       &kp ESC
             >;
         };
 
