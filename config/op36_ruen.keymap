@@ -247,6 +247,69 @@
             key-positions = <5 6>;
             layers = <1 3 5 7>;
         };
+
+        slash_en {
+            bindings = <&kp SLASH>;
+            key-positions = <16 25>;
+            layers = <0 2 6 4>;
+        };
+
+        slash_ru {
+            bindings = <&kp RU_SLASH>;
+            key-positions = <16 25>;
+            layers = <1 3 5 7>;
+        };
+
+        backslash_en {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <15 26>;
+            layers = <0 2 6 4>;
+        };
+
+        backslash_ru {
+            bindings = <&en BACKSLASH>;
+            key-positions = <15 26>;
+            layers = <1 3 5 7>;
+        };
+
+        pipe_en {
+            bindings = <&kp PIPE>;
+            key-positions = <15 25>;
+            layers = <0 2 4 6>;
+        };
+
+        pipe_ru {
+            bindings = <&en PIPE>;
+            key-positions = <15 25>;
+            layers = <1 3 5 7>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 18>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <7 8>;
+        };
+
+        ques_en {
+            bindings = <&kp QUESTION>;
+            key-positions = <27 28>;
+            layers = <0 2 4 6>;
+        };
+
+        ques_ru {
+            bindings = <&kp RU_QUESTION>;
+            key-positions = <27 28>;
+            layers = <1 3 5 7>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <6 15>;
+        };
     };
 
     macros {
