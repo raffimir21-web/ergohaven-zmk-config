@@ -44,13 +44,13 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <6 8>;
-            layers = <1>;
+            layers = <1 5>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <26 28>;
-            layers = <1>;
+            layers = <1 5>;
         };
 
         cmben {
@@ -68,6 +68,28 @@
         togle_len {
             bindings = <&to_en>;
             key-positions = <1 2 3>;
+        };
+
+        to_mac {
+            bindings = <&mac_layer_en>;
+            key-positions = <34 35>;
+        };
+
+        to_base {
+            bindings = <&layer_en>;
+            key-positions = <33 34>;
+        };
+
+        cmd_mac_ru {
+            bindings = <&mac_layer_ru>;
+            key-positions = <1 2>;
+            layers = <4>;
+        };
+
+        cmd_mac_en {
+            bindings = <&mac_layer_en>;
+            key-positions = <1 2>;
+            layers = <5>;
         };
     };
 
@@ -125,6 +147,20 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        mac_layer_ru: mac_layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 5 &to_ru>;
+            label = "MAC_LAYER_RU";
+        };
+
+        mac_layer_en: mac_layer_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 4 &to_en>;
+            label = "MAC_LAYER_EN";
+        };
     };
 
     keymap {
@@ -134,7 +170,7 @@
             bindings = <
   &kp Q         &kp W            &kp E            &kp R              &kp T                                      &kp Y        &kp U          &kp I             &kp O             &kp P
   &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G                                      &kp H        &hmr RSHIFT J  &hmr RIGHT_ALT K  &hmr RIGHT_GUI L  &hmr RCTRL SEMICOLON
-  &kp Z         &kp X            &kp C            &kp V              &kp B                                      &kp N        &kp M          &kp COMMA         &kp DOT           &en DOT
+  &kp Z         &kp X            &kp C            &kp V              &kp B                                      &kp N        &kp M          &kp COMMA         &kp DOT           &kp DOT
                                                   &lt 8 DEL          &lt 9 ENTER  &lt 2 TAB    &lt 2 BACKSPACE  &lt 9 SPACE  &lt 8 ESC
             >;
 
