@@ -1,7 +1,9 @@
 #include "keys_ru.h"
 #include "keys_ru.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -482,7 +484,7 @@
             bindings = <
   &en TILDE         &en CARET         &none            &none              &none                                &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_3 PLUS
   &hml LCTRL A      &hml LEFT_GUI A   &hml LEFT_ALT A  &hml LEFT_SHIFT A  &none                                &kp RU_PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
-  &en LS(NUMBER_2)  &en LS(NUMBER_3)  &none            &none              &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp RU_DOT
+  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none            &none              &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp RU_DOT
                                                        &kp DEL            &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE       &kp ESC
             >;
 
@@ -520,17 +522,17 @@
             bindings = <
   &en TILDE2        &en CARET         &none            &none              &none                                &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_7 A
   &hml LEFT_GUI A   &hml LCTRL A      &hml LEFT_ALT A  &hml LEFT_SHIFT A  &none                                &kp RU_PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
-  &en LS(NUMBER_2)  &en LS(NUMBER_3)  &none            &none              &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp LS(NUMBER_7)
+  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none            &none              &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp LS(NUMBER_7)
                                                        &kp DEL            &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE       &kp ESC
             >;
         };
 
         fn {
             bindings = <
-  &kp F2    &kp F3          &kp F4  &kp F5            &kp F6                               &kp F7     &kp F8   &kp F9  &kp F10  &mt NUMBER_8 F11
-  &kp F1    &mmv MOVE_LEFT  &none   &kp K_PLAY_PAUSE  &none                                &none      &none    &none   &none    &kp F12
-  &kp CAPS  &none           &none   &none             &none                                &none      &none    &none   &none    &none
-                                    &kp DEL           &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &kp F2    &kp F3          &kp F4  &kp F5            &kp F6                               &kp F7      &kp F8           &kp F9          &kp F10          &mt NUMBER_8 F11
+  &kp F1    &mmv MOVE_LEFT  &none   &kp K_PLAY_PAUSE  &none                                &none       &none            &none           &none            &kp F12
+  &kp CAPS  &none           &none   &none             &none                                &kp C_MENU  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT
+                                    &kp DEL           &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE   &kp ESC
             >;
         };
 
@@ -545,10 +547,10 @@
 
         rev {
             bindings = <
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &kp B
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-  &none  &none  &none  &none    &none                                &none      &none    &none  &none  &none
-                       &kp ESC  &kp SPACE  &kp BACKSPACE    &kp TAB  &kp ENTER  &kp DEL
+  &none  &none  &none  &none    &none                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+  &none  &none  &none  &none    &none                                &out OUT_BLE  &none         &none         &none         &bt BT_CLR
+  &none  &none  &none  &none    &none                                &out OUT_USB  &none         &none         &none         &studio_unlock
+                       &kp ESC  &kp SPACE  &kp BACKSPACE    &kp TAB  &kp ENTER     &kp DEL
             >;
         };
     };
