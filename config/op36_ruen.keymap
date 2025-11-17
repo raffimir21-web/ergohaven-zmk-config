@@ -192,25 +192,25 @@
 
         bracket_sq_left_en {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <26 7>;
+            key-positions = <7 15>;
             layers = <0 2 6 4>;
         };
 
         bracket_sq_right_en {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <6 27>;
+            key-positions = <5 17>;
             layers = <0 2 6 4>;
         };
 
         bracket_sq_left_ru {
             bindings = <&en LEFT_BRACKET>;
-            key-positions = <26 7>;
+            key-positions = <7 15>;
             layers = <1 3 5 7>;
         };
 
         bracket_sq_right_ru {
             bindings = <&en RIGHT_BRACKET>;
-            key-positions = <6 27>;
+            key-positions = <5 17>;
             layers = <1 3 5 7>;
         };
 
@@ -544,7 +544,7 @@
 
         sym_en {
             bindings = <
-  &kp TILDE     &kp CARET        &none            &none              &none                                  &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_2 PLUS
+  &kp TILDE     &kp CARET        &kp AT_SIGN      &none              &none                                  &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_2 PLUS
   &hml LCTRL A  &hml LEFT_GUI A  &hml LEFT_ALT A  &hml LEFT_SHIFT A  &code_block                            &kp PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
   &none         &none            &none            &none              &none                                  &kp N0       &kp N1   &kp N2  &kp N3  &kp DOT
                                                   &kp DEL            &kp ENTER    &kp TAB    &kp BACKSPACE  &kp SPACE    &kp ESC
@@ -555,7 +555,7 @@
 
         sym_ru {
             bindings = <
-  &en TILDE         &en CARET         &none            &none              &none                                &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_3 PLUS
+  &en TILDE         &en CARET         &en AT_SIGN      &none              &none                                &kp RU_STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_3 PLUS
   &hml LCTRL A      &hml LEFT_GUI A   &hml LEFT_ALT A  &hml LEFT_SHIFT A  &none                                &kp RU_PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
   &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none            &none              &none                                &kp N0          &kp N1   &kp N2  &kp N3  &kp RU_DOT
                                                        &kp DEL            &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE       &kp ESC
@@ -611,10 +611,10 @@
 
         nav {
             bindings = <
-  &to_end_line  &none     &kp UP    &kp PAGE_UP    &to_home_line                            &none      &none    &none  &none  &mt NUMBER_9 A
-  &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                  &none      &none    &none  &none  &none
-  &to_all_line  &none     &none     &kp PAGE_DOWN  &none                                    &none      &none    &none  &none  &none
-                                    &kp DEL        &kp ENTER      &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &to_home_line  &none     &kp UP    &kp PAGE_UP    &to_end_line                            &none      &none    &none  &none  &mt NUMBER_9 A
+  &kp HOME       &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                 &none      &none    &none  &none  &none
+  &to_all_line   &none     &none     &kp PAGE_DOWN  &none                                   &none      &none    &none  &none  &none
+                                     &kp DEL        &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
             >;
         };
 
@@ -629,10 +629,10 @@
 
         nav_mac {
             bindings = <
-  &to_end_line_mac  &none     &kp UP    &kp PAGE_UP    &to_home_line_mac                            &none      &none    &none  &none  &mt M A
-  &kp HOME          &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                      &none      &none    &none  &none  &none
-  &to_all_line_mac  &none     &none     &kp PAGE_DOWN  &none                                        &none      &none    &none  &none  &none
-                                        &kp DEL        &kp ENTER          &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &to_home_line_mac  &none     &kp UP    &kp PAGE_UP    &to_end_line_mac                            &none      &none    &none  &none  &mt M A
+  &kp HOME           &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                     &none      &none    &none  &none  &none
+  &to_all_line_mac   &none     &none     &kp PAGE_DOWN  &none                                       &none      &none    &none  &none  &none
+                                         &kp DEL        &kp ENTER         &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
             >;
         };
     };
