@@ -442,6 +442,79 @@
             bindings = <&to 4 &to_en>;
             label = "MAC_LAYER_EN";
         };
+
+        to_home_line: to_home_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(HOME)>, <&macro_wait_time 50>, <&kp LC(C)>;
+
+            label = "TO_HOME_LINE";
+        };
+
+        to_home_line_mac: to_home_line_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(HOME)>, <&macro_wait_time 50>, <&kp LG(C)>;
+
+            label = "TO_HOME_LINE_MAC";
+        };
+
+        to_end_line: to_end_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END)>, <&macro_wait_time 50>, <&kp LC(C)>;
+
+            label = "TO_END_LINE";
+        };
+
+        to_end_line_mac: to_end_line_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END)>, <&macro_wait_time 50>, <&kp LG(C)>;
+
+            label = "TO_END_LINE_MAC";
+        };
+
+        to_all_line: to_all_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp HOME>,
+                <&macro_wait_time 50>,
+                <&kp LS(END)>,
+                <&macro_wait_time 50>,
+                <&kp LC(C)>;
+
+            label = "TO_ALL_LINE";
+        };
+
+        to_all_line_mac: to_all_line_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp HOME>,
+                <&macro_wait_time 50>,
+                <&kp LS(END)>,
+                <&macro_wait_time 50>,
+                <&kp LG(C)>;
+
+            label = "TO_ALL_LINE_MAC";
+        };
+
+        code_block: code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp GRAVE &kp GRAVE &kp GRAVE>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>,
+                <&macro_wait_time 50>,
+                <&kp GRAVE &kp GRAVE &kp GRAVE>,
+                <&macro_wait_time 50>,
+                <&kp UP>;
+
+            label = "CODE_BLOCK";
+        };
     };
 
     keymap {
