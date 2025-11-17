@@ -544,10 +544,10 @@
 
         sym_en {
             bindings = <
-  &kp TILDE     &kp CARET        &none            &none              &none                                &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_2 PLUS
-  &hml LCTRL A  &hml LEFT_GUI A  &hml LEFT_ALT A  &hml LEFT_SHIFT A  &none                                &kp PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
-  &none         &none            &none            &none              &none                                &kp N0       &kp N1   &kp N2  &kp N3  &kp DOT
-                                                  &kp DEL            &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE    &kp ESC
+  &kp TILDE     &kp CARET        &none            &none              &none                                  &kp STAR     &kp N7   &kp N8  &kp N9  &mt NUMBER_2 PLUS
+  &hml LCTRL A  &hml LEFT_GUI A  &hml LEFT_ALT A  &hml LEFT_SHIFT A  &code_block                            &kp PERCENT  &kp N4   &kp N5  &kp N6  &kp MINUS
+  &none         &none            &none            &none              &none                                  &kp N0       &kp N1   &kp N2  &kp N3  &kp DOT
+                                                  &kp DEL            &kp ENTER    &kp TAB    &kp BACKSPACE  &kp SPACE    &kp ESC
             >;
 
             display-name = "Symbols";
@@ -611,10 +611,10 @@
 
         nav {
             bindings = <
-  &none     &none     &kp UP    &kp PAGE_UP    &none                                &none      &none    &none  &none  &mt NUMBER_9 A
-  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                              &none      &none    &none  &none  &none
-  &none     &none     &none     &kp PAGE_DOWN  &none                                &none      &none    &none  &none  &none
-                                &kp DEL        &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
+  &to_end_line  &none     &kp UP    &kp PAGE_UP    &to_home_line                            &none      &none    &none  &none  &mt NUMBER_9 A
+  &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                  &none      &none    &none  &none  &none
+  &to_all_line  &none     &none     &kp PAGE_DOWN  &none                                    &none      &none    &none  &none  &none
+                                    &kp DEL        &kp ENTER      &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
             >;
         };
 
@@ -624,6 +624,15 @@
   &none  &none  &none  &none    &none                                &out OUT_BLE  &none         &none         &none         &bt BT_CLR
   &none  &none  &none  &none    &none                                &out OUT_USB  &none         &none         &none         &studio_unlock
                        &kp ESC  &kp SPACE  &kp BACKSPACE    &kp TAB  &kp ENTER     &kp DEL
+            >;
+        };
+
+        nav_mac {
+            bindings = <
+  &to_end_line_mac  &none     &kp UP    &kp PAGE_UP    &to_home_line_mac                            &none      &none    &none  &none  &mt M A
+  &kp HOME          &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                      &none      &none    &none  &none  &none
+  &to_all_line_mac  &none     &none     &kp PAGE_DOWN  &none                                        &none      &none    &none  &none  &none
+                                        &kp DEL        &kp ENTER          &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
             >;
         };
     };
