@@ -354,7 +354,7 @@
 
         sym_en {
             bindings = <
-  &none          &none        &none       &none     &none                                  &kp CARET      &kp TILDE         &kp GRAVE          &none              &mt NUMBER_2 EXCLAMATION
+  &none          &none        &none       &none     &none                                  &kp CARET      &kp TILDE         &kp GRAVE          &kp EQUAL          &mt NUMBER_2 EXCLAMATION
   &kp AMPERSAND  &kp AT_SIGN  &kp DOLLAR  &kp HASH  &kp PERCENT                            &kp BACKSLASH  &kp LEFT_BRACKET  &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET  &kp SEMICOLON
   &none          &none        &none       &none     &none                                  &kp PIPE       &kp LESS_THAN     &kp APOSTROPHE     &kp GREATER_THAN   &kp QUESTION
                                           &kp DEL   &kp ENTER    &kp TAB    &kp BACKSPACE  &kp SPACE      &kp ESC
@@ -365,7 +365,7 @@
 
         sym_ru {
             bindings = <
-  &none          &none        &none       &none     &none                                  &en CARET      &en TILDE         &en GRAVE         &none              &mt NUMBER_3 RU_EXCL
+  &none          &none        &none       &none     &none                                  &en CARET      &en TILDE         &en GRAVE         &kp EQUAL          &mt NUMBER_3 RU_EXCL
   &en AMPERSAND  &en AT_SIGN  &en DOLLAR  &en HASH  &kp PERCENT                            &en BACKSLASH  &en LEFT_BRACKET  &kp LS(NUMBER_2)  &en RIGHT_BRACKET  &kp LS(NUMBER_4)
   &none          &none        &none       &none     &none                                  &en PIPE       &en LESS_THAN     &en SINGLE_QUOTE  &en GREATER_THAN   &kp LS(NUMBER_7)
                                           &kp DEL   &kp ENTER    &kp TAB    &kp BACKSPACE  &kp SPACE      &kp ESC
@@ -448,10 +448,10 @@
 
         nav_ru {
             bindings = <
-  &to_home_line    &none               &kp UP              &kp PAGE_UP            &to_end_line                            &kp ASTERISK   &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
-  &hml LCTRL HOME  &hml LEFT_GUI LEFT  &hml LEFT_ALT DOWN  &hml LEFT_SHIFT RIGHT  &kp END                                 &kp BACKSLASH  &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
-  &to_all_line     &none               &none               &kp PAGE_DOWN          &none                                   &kp N0         &kp N1                     &kp N2                   &kp N3                   &kp RU_DOT
-                                                           &kp DEL                &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE      &kp ESC
+  &to_home_line    &none               &kp UP              &kp PAGE_UP            &to_end_line                            &kp ASTERISK  &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
+  &hml LCTRL HOME  &hml LEFT_GUI LEFT  &hml LEFT_ALT DOWN  &hml LEFT_SHIFT RIGHT  &kp END                                 &kp RU_SLASH  &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
+  &to_all_line     &none               &none               &kp PAGE_DOWN          &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp RU_DOT
+                                                           &kp DEL                &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
             >;
         };
     };
