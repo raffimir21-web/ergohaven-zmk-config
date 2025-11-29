@@ -18,9 +18,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <120>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
@@ -31,9 +31,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <120>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
@@ -415,7 +415,7 @@
 
         mac_sym_ru {
             bindings = <
-  &none          &none        &none       &none     &none                                       &en CARET      &en TILDE         &en GRAVE         &kp EQUAL          &mt NUMBER_7 EXCLAMATION
+  &none          &none        &none       &none     &none                                       &en CARET      &en TILDE2        &en GRAVE         &kp EQUAL          &mt NUMBER_7 EXCLAMATION
   &en AMPERSAND  &en AT_SIGN  &en DOLLAR  &en HASH  &kp LS(NUMBER_4)                            &en BACKSLASH  &en LEFT_BRACKET  &kp LS(NUMBER_2)  &en RIGHT_BRACKET  &en SEMICOLON
   &none          &none        &none       &none     &none                                       &en PIPE       &en LESS_THAN     &en SINGLE_QUOTE  &en GREATER_THAN   &en LS(QUESTION)
                                           &kp DEL   &kp ENTER         &kp TAB    &kp BACKSPACE  &kp SPACE      &kp ESC
@@ -433,10 +433,10 @@
 
         nav {
             bindings = <
-  &to_home_line    &none               &kp UP              &kp PAGE_UP            &to_end_line                            &kp ASTERISK  &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
-  &hml LCTRL HOME  &hml LEFT_GUI LEFT  &hml LEFT_ALT DOWN  &hml LEFT_SHIFT RIGHT  &kp END                                 &kp SLASH     &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
-  &to_all_line     &none               &none               &kp PAGE_DOWN          &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp LS(NUMBER_7)
-                                                           &kp DEL                &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
+  &to_home_line    &none     &kp UP    &kp PAGE_UP    &to_end_line                            &kp ASTERISK  &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
+  &hml LCTRL HOME  &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                 &kp SLASH     &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
+  &to_all_line     &none     &none     &kp PAGE_DOWN  &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp LS(NUMBER_7)
+                                       &kp DEL        &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
             >;
         };
 
@@ -460,10 +460,10 @@
 
         nav_ru {
             bindings = <
-  &to_home_line    &none               &kp UP              &kp PAGE_UP            &to_end_line                            &en ASTERISK  &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
-  &hml LCTRL HOME  &hml LEFT_GUI LEFT  &hml LEFT_ALT DOWN  &hml LEFT_SHIFT RIGHT  &kp END                                 &kp RU_SLASH  &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
-  &to_all_line     &none               &none               &kp PAGE_DOWN          &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp RU_DOT
-                                                           &kp DEL                &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
+  &to_home_line    &none     &kp UP    &kp PAGE_UP    &to_end_line                            &en ASTERISK  &kp N7                     &kp N8                   &kp N9                   &mt NUMBER_9 PLUS
+  &hml LCTRL HOME  &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                 &kp RU_SLASH  &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
+  &to_all_line     &none     &none     &kp PAGE_DOWN  &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp RU_DOT
+                                       &kp DEL        &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
             >;
         };
     };
