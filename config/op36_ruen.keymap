@@ -19,7 +19,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <100>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
 
@@ -32,7 +32,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <100>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
 
@@ -70,12 +70,12 @@
 
         to_mac {
             bindings = <&mac_layer_en>;
-            key-positions = <34 35>;
+            key-positions = <35 33>;
         };
 
         to_base {
             bindings = <&layer_en>;
-            key-positions = <33 34>;
+            key-positions = <30 32>;
         };
 
         cmd_mac_ru {
@@ -123,13 +123,13 @@
         comma_en {
             bindings = <&kp COMMA>;
             key-positions = <26 27>;
-            layers = <0 2 4 6>;
+            layers = <0 2 4 6 9>;
         };
 
         comma_ru {
             bindings = <&kp LS(SLASH)>;
             key-positions = <26 27>;
-            layers = <1 3>;
+            layers = <1 3 12>;
         };
 
         to_layer_en {
@@ -379,7 +379,7 @@
             bindings = <
   &none          &none        &none       &none     &none                                  &en CARET      &en TILDE         &en GRAVE         &kp EQUAL          &mt NUMBER_3 RU_EXCL
   &en AMPERSAND  &en AT_SIGN  &en DOLLAR  &en HASH  &kp PERCENT                            &en BACKSLASH  &en LEFT_BRACKET  &kp LS(NUMBER_2)  &en RIGHT_BRACKET  &kp LS(NUMBER_4)
-  &none          &none        &none       &none     &none                                  &en PIPE       &en LESS_THAN     &en SINGLE_QUOTE  &en GREATER_THAN   &kp LS(NUMBER_7)
+  &none          &none        &none       &none     &none                                  &en PIPE       &en LESS_THAN     &en SINGLE_QUOTE  &en GREATER_THAN   &en RU_DOT
                                           &kp DEL   &kp ENTER    &kp TAB    &kp BACKSPACE  &kp SPACE      &kp ESC
             >;
 
