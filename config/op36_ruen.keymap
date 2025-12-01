@@ -52,7 +52,7 @@
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <5 6>;
+            key-positions = <6 9>;
             layers = <1 5>;
         };
 
@@ -110,13 +110,13 @@
 
         colon_en {
             bindings = <&kp COLON>;
-            key-positions = <26 29>;
+            key-positions = <16 17>;
             layers = <0 2 4 6>;
         };
 
         colon_ru {
             bindings = <&kp RU_COLON>;
-            key-positions = <26 29>;
+            key-positions = <16 17>;
             layers = <1 3>;
         };
 
@@ -191,7 +191,7 @@
 
         colon_mac_ru {
             bindings = <&kp LS(NUMBER_5)>;
-            key-positions = <26 29>;
+            key-positions = <16 17>;
             layers = <5 7>;
         };
 
@@ -370,7 +370,7 @@
         en {
             bindings = <
   &kp Q         &kp W  &kp E  &kp R              &kp T                                      &kp Y        &kp U          &kp I      &kp O    &mt NUMBER_0 P
-  &hml LCTRL A  &kp S  &kp D  &hml LEFT_SHIFT F  &kp G                                      &kp H        &hmr RSHIFT J  &kp K      &kp L    &hmr RCTRL SEMICOLON
+  &hml LCTRL A  &kp S  &kp D  &hml LEFT_SHIFT F  &lt 13 G                                   &kp H        &hmr RSHIFT J  &kp K      &kp L    &hmr RCTRL SEMICOLON
   &kp Z         &kp X  &kp C  &kp V              &kp B                                      &kp N        &kp M          &kp COMMA  &kp DOT  &kp DOT
                               &lt 8 DEL          &lt 9 ENTER  &lt 2 TAB    &lt 2 BACKSPACE  &lt 9 SPACE  &lt 8 ESC
             >;
@@ -380,10 +380,10 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA         &kp RU_CYRILLIC_IE                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE             &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &mt NUMBER_1 RU_CYRILLIC_ZE
-  &hml LCTRL RU_CYRILLIC_EF  &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &hml LSHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                &kp RU_CYRILLIC_ER  &hmr RIGHT_SHIFT RU_CYRILLIC_O  &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &hmr RCTRL RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I                                 &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT
-                                                                       &lt 8 DEL                  &lt 12 ENTER        &lt 3 TAB    &lt 3 BACKSPACE  &lt 12 SPACE        &lt 8 ESC
+  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA         &kp RU_CYRILLIC_IE                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE             &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &mt NUMBER_1 RU_CYRILLIC_ZE
+  &hml LCTRL RU_CYRILLIC_EF  &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &hml LSHIFT RU_CYRILLIC_A  &lt 13 RU_CYRILLIC_PE                                &kp RU_CYRILLIC_ER  &hmr RIGHT_SHIFT RU_CYRILLIC_O  &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &hmr RCTRL RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I                                    &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN       &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT
+                                                                       &lt 8 DEL                  &lt 12 ENTER           &lt 3 TAB    &lt 3 BACKSPACE  &lt 12 SPACE        &lt 8 ESC
             >;
 
             display-name = "Ru";
@@ -414,7 +414,7 @@
         mac_en {
             bindings = <
   &kp Q            &kp W         &kp E            &kp R              &kp T                                      &kp Y        &kp U               &kp I             &kp O         &mt NUMBER_4 P
-  &hml LEFT_GUI A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &lt 10 G                                   &lt 10 H     &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_GUI SEMI
+  &hml LEFT_GUI A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &lt 13 G                                   &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_GUI SEMI
   &kp Z            &kp X         &kp C            &kp V              &kp B                                      &kp N        &kp M               &kp COMMA         &kp DOT       &kp FSLH
                                                   &lt 8 DEL          &lt 9 ENTER  &lt 6 TAB    &lt 6 BACKSPACE  &lt 9 SPACE  &lt 8 ESC
             >;
@@ -423,7 +423,7 @@
         mac_ru {
             bindings = <
   &kp Q            &kp W         &kp E            &kp R              &kp T                                      &kp Y        &kp U               &kp I             &kp O         &mt NUMBER_5 RU_CYRILLIC_ZE
-  &hml LEFT_GUI A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &lt 10 G                                   &lt 10 H     &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_GUI SEMI
+  &hml LEFT_GUI A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &lt 13 G                                   &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_GUI SEMI
   &kp Z            &kp X         &kp C            &kp V              &kp B                                      &kp N        &kp M               &kp COMMA         &kp DOT       &kp LS(NUMBER_7)
                                                   &lt 8 DEL          &lt 9 ENTER  &lt 7 TAB    &lt 7 BACKSPACE  &lt 9 SPACE  &lt 8 ESC
             >;
@@ -449,10 +449,10 @@
 
         fn {
             bindings = <
-  &kp F2    &kp F3          &kp F4  &kp F5            &kp F6                               &kp F7      &kp F8           &kp F9  &kp F10  &mt NUMBER_8 F11
-  &kp F1    &mmv MOVE_LEFT  &none   &kp K_PLAY_PAUSE  &none                                &none       &none            &none   &none    &kp F12
-  &kp CAPS  &none           &none   &none             &none                                &kp K_MENU  &kp PRINTSCREEN  &none   &none    &kp INSERT
-                                    &kp DEL           &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE   &kp ESC
+  &kp F2    &kp F3          &kp F4  &kp F5            &kp F6                               &kp F7     &kp F8           &kp F9  &kp F10  &mt NUMBER_8 F11
+  &kp F1    &mmv MOVE_LEFT  &none   &kp K_PLAY_PAUSE  &none                                &none      &none            &none   &none    &kp F12
+  &kp CAPS  &none           &none   &none             &none                                &none      &kp PRINTSCREEN  &none   &none    &kp INSERT
+                                    &kp DEL           &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp ESC
             >;
         };
 
@@ -489,6 +489,15 @@
   &hml LCTRL HOME  &kp LEFT  &kp DOWN  &kp RIGHT      &kp END                                 &kp RU_SLASH  &hmr RIGHT_SHIFT NUMBER_4  &hmr RIGHT_ALT NUMBER_5  &hmr RIGHT_GUI NUMBER_6  &hmr RCTRL MINUS
   &to_all_line     &none     &none     &kp PAGE_DOWN  &none                                   &kp N0        &kp N1                     &kp N2                   &kp N3                   &kp RU_DOT
                                        &kp DEL        &kp ENTER     &kp TAB    &kp BACKSPACE  &kp SPACE     &kp ESC
+            >;
+        };
+
+        revers {
+            bindings = <
+  &none  &none  &none  &none       &none                              &none  &none  &none  &none  &none
+  &none  &none  &none  &none       &none                              &none  &none  &none  &none  &none
+  &none  &none  &none  &none       &none                              &none  &none  &none  &none  &none
+                       &kp ESCAPE  &kp SPACE  &kp BACKSPACE    &none  &none  &none
             >;
         };
     };
